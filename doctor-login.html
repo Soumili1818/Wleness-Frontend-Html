@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <main
+      class="flex md:flex-row flex-col justify-center items-center md:items-stretch h-screen"
+    >
+      <aside
+        class="md:w-1/2 hidden md:flex justify-center items-center bg-primary-200 bg-[url(../images/right-bar.jpg)] bg-right bg-no-repeat bg-contain"
+      >
+        <img
+          src="src/images/doctor-login.png"
+          alt=""
+          class="block object-cover w-[440px]"
+        />
+      </aside>
+
+      <div class="md:w-1/2 flex justify-center items-center px-4">
+        <div class="sm:w-[440px] w-full">
+          <div class="sm:w-[320px] w-full mx-auto mb-12">
+            <img
+              src="src/images/logo.png"
+              alt="Logo"
+              class="block object-cover w-full"
+            />
+          </div>
+
+          <div class="flex justify-between gap-5 mb-10">
+            <a href="./doctor-login.html" class="btn-primary">LOGIN</a>
+            <a href="./doctor-signup.html" class="btn-transparent">SIGN UP</a>
+          </div>
+
+          <form action="javascript:void()" class="mb-8">
+            <label for="username" class="mb-5 block">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Email or Mobile Number"
+                class="form-input"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                class="form-input"
+              />
+              <a href="#" class="text-right block mb-10 text-primary-100"
+                >Forgot Password?</a
+              >
+            </label>
+
+            <div class="text-center">
+              <button class="btn-primary !w-fit !px-28">LOGIN</button>
+            </div>
+          </form>
+
+          <p class="text-center">
+            Don't have an account yet.
+            <a href="#" class="text-primary-100">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

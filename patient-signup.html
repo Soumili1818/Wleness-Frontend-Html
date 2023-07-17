@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient SignUp</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <main
+      class="flex md:flex-row flex-col justify-center items-center md:items-stretch h-screen"
+    >
+      <aside
+        class="md:w-1/2 hidden md:flex justify-center items-center bg-primary-200 bg-[url(../images/right-bar.jpg)] bg-right bg-no-repeat bg-contain"
+      >
+        <img
+          src="src/images/signup.png"
+          alt=""
+          class="block object-cover w-[440px]"
+        />
+      </aside>
+
+      <div class="md:w-1/2 flex justify-center items-center px-4">
+        <div class="sm:w-[440px] w-full">
+          <div class="sm:w-[320px] w-full mx-auto mb-4 lg:mb-8 xl:mb-10">
+            <img
+              src="src/images/logo.png"
+              alt="Logo"
+              class="block object-cover w-full"
+            />
+          </div>
+
+          <div class="flex justify-between gap-5 mb-7">
+            <a href="./patient-login.html" class="btn-transparent">LOGIN</a>
+            <a href="./patient-signup.html" class="btn-primary">SIGN UP</a>
+          </div>
+
+          <form action="javascript:void()" class="mb-4 md:mb-8">
+            <label for="username">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                class="form-input"
+              />
+            </label>
+            <label for="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="form-input"
+              />
+            </label>
+            <div class="flex gap-3">
+              <label for="gender">
+                <input
+                  type="text"
+                  id="gender"
+                  name="gender"
+                  placeholder="Gender"
+                  class="form-input"
+                />
+              </label>
+              <label for="mobile">
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                  class="form-input"
+                />
+              </label>
+            </div>
+
+            <label for="otp">
+              <input
+                type="number"
+                id="otp"
+                name="otp"
+                placeholder="OTP / Password"
+                class="form-input"
+              />
+            </label>
+            <div
+              class="text-center flex gap-2 flex-col justify-center items-center w-72 mx-auto lg:mt-4"
+            >
+              <button class="btn-primary">CREATE ACCOUNT</button>
+              <button class="btn-transparent">SIGN UP WITH GOOGLE</button>
+            </div>
+          </form>
+
+          <p class="text-center">
+            Already have an account
+            <a href="#" class="text-primary-100">Login</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
