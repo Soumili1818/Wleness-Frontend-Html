@@ -55,33 +55,21 @@
                 class="form-input"
               />
             </label>
-            <div class="flex gap-3">
-              <label for="gender">
-                <input
-                  type="text"
-                  id="gender"
-                  name="gender"
-                  placeholder="Gender"
-                  class="form-input"
-                />
-              </label>
-              <label for="mobile">
-                <input
-                  type="tel"
-                  id="mobile"
-                  name="mobile"
-                  placeholder="Mobile Number"
-                  class="form-input"
-                />
-              </label>
-            </div>
 
-            <label for="otp">
+            <label for="gender">
+              <select name="gender" id="gender" class="form-input">
+                <option>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="female">Other</option>
+              </select>
+            </label>
+            <label for="mobile">
               <input
-                type="number"
-                id="otp"
-                name="otp"
-                placeholder="OTP / Password"
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Mobile Number"
                 class="form-input"
               />
             </label>
@@ -102,5 +90,58 @@
         </div>
       </div>
     </main>
+
+    <!-- OTP Verification -->
+    <div
+      class="fixed inset-0 w-full hidden justify-center items-center bg-black/40"
+    >
+      <div
+        class="bg-white border-2 px-4 pt-6 pb-4 lg:px-10 lg:pt-10 lg:pb-8 rounded-2xl shadow-lg"
+      >
+        <div class="mb-4 lg:mb-8 text-center">
+          <h4 class="font-semibold text-lg lg:text-2xl mb-2">
+            OTP Verification
+          </h4>
+          <p class="text-xs lg:text-base">
+            Enter the OTP sent to <span>+91 *******789</span>
+          </p>
+        </div>
+
+        <form action="">
+          <div
+            class="grid grid-cols-4 gap-3 w-[14rem] mx-auto lg:w-[20rem] mb-4 lg:mb-6"
+          >
+            <input
+              type="text"
+              maxlength="1"
+              class="px-1 py-2 lg:py-3 rounded-xl border-2 text-md lg:text-xl text-center font-semibold"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="px-1 py-2 lg:py-3 rounded-xl border-2 text-md lg:text-xl text-center font-semibold"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="px-1 py-2 lg:py-3 rounded-xl border-2 text-md lg:text-xl text-center font-semibold"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="px-1 py-2 lg:py-3 rounded-xl border-2 text-md lg:text-xl text-center font-semibold"
+            />
+          </div>
+
+          <div class="text-center">
+            <button class="btn-primary">VERIFY</button>
+          </div>
+          <span
+            class="text-center text-xs md:text-sm block mt-1 lg:mt-2 font-medium text-primary-100"
+            >Resend OTP</span
+          >
+        </form>
+      </div>
+    </div>
   </body>
 </html>
