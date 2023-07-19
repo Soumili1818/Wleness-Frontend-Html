@@ -8,12 +8,16 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px',
-      '3xl': '1720px',
+      '2xl': '1440px',
+      '3xl': '1536px',
+      '4xl': '1600px',
+      '5xl': '1920px',
     },
     extend: {
     colors: {
       primary: {
+        10: 'rgba(170, 231, 224, 0.22)',
+        50: '#B4F0E9',
         100: '#54BDAF',
         200: '#EEFFFD',
         300: '#2FC4B1',
@@ -25,7 +29,7 @@ module.exports = {
       light: '#464646',
     },
     fontFamily:{
-      'lato': ['Lato', 'sans-serif']
+      'quicksand': ['Quicksand', 'sans-serif']
     }
     },
   },
