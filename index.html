@@ -146,7 +146,7 @@
       class="container mx-auto flex flex-col items-center rounded-3xl !px-5 py-2 lg:bg-primary-50/30 lg:py-6 lg:flex-row 2xl:justify-between 2xl:py-8"
     >
       <div
-        class="lg:order-2 xl:w-[45%] 2xl:flex 2xl:justify-end mb-6 lg:mb-0 lg:translate-x-20 lg:translate-y-6 2xl"
+        class="lg:order-2 xl:w-[45%] 2xl:flex 2xl:justify-end mb-6 lg:mb-0 lg:translate-x-20 lg:translate-y-6 2xl -mx-5"
       >
         <!-- Desktop Image -->
         <img
@@ -334,48 +334,92 @@
     </section>
 
     <!-- ========== Internship ========== -->
-    <!-- <section class="relative py-12">
-      <img
-        src="src/images/home/internship.svg"
-        alt=""
-        class="mx-auto w-full object-cover lg:w-4/5 xl:w-3/5"
-      />
-
-      <div
-        class="absolute left-1/2 top-1/2 w-3/5 -translate-x-1/2 -translate-y-1/2 text-center sm:w-[400px] md:w-[480px] 2xl:w-[500px]"
-      >
-        <h3
-          class="bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text font-poppins text-lg font-bold leading-5 text-transparent xs:text-2xl sm:text-3xl md:text-5xl 2xl:text-6xl"
-        >
-          Looking for an internship?
-        </h3>
-        <p
-          class="mb-2 text-xs leading-4 xs:text-sm sm:text-base md:mb-4 md:text-lg lg:text-xl"
-        >
-          Upload your CV and make a positive impact on peoples life by joining
-          our internship program.
-        </p>
-        <button
-          class="rounded-full bg-primary-500 px-4 py-1.5 text-sm text-white md:px-5 md:py-3"
-        >
-          Get Started
-        </button>
+    <section class="relative py-12 hidden">
+      <div class="py-14 border-2 w-fit px-8 rounded-[100%] mx-auto">
+        <div class="border-2 w-fit mx-10 py-14 px-8 rounded-[100%]">
+          <div
+            class="text-center py-32 border-2 w-fit mx-10 px-8 rounded-[100%]"
+          >
+            <h3
+              class="heading-primary text-lg lg:text-5xl font-bold pb-1 text-center"
+            >
+              Looking for an internship?
+            </h3>
+            <p
+              class="mb-2 text-xs leading-4 sm:text-base md:mb-4 md:text-lg w-[640px] px-10"
+            >
+              Upload your CV and make a positive impact on peoples life by
+              joining our internship program.
+            </p>
+            <button class="btn-one">Get Started</button>
+          </div>
+        </div>
       </div>
 
       <img
         src="src/images/home/doodle-1.svg"
         alt=""
-        class="absolute right-0 top-10 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 2xl:w-[400px] 3xl:w-[520px]"
+        class="absolute right-0 top-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80"
       />
       <img
         src="src/images/home/doodle-2.svg"
         alt=""
-        class="absolute bottom-0 left-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 2xl:w-[400px] 3xl:w-[520px]"
+        class="absolute bottom-0 left-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80"
       />
-    </section> -->
+    </section>
+
+    <!-- ========== Community ========== -->
+    <section class="overflow-x-hidden relative">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col justify-between lg:flex-row lg:items-center relative"
+        >
+          <article class="mx-auto pb-10 lg:w-3/5">
+            <hgroup class="mb-14">
+              <h2 class="subheading heading-primary">Wleness Community</h2>
+              <p class="para">
+                Wleness is beginning of happiness of your life.
+              </p>
+            </hgroup>
+
+            <p class="text-lg mb-8 lg:pr-28">
+              "<span class="text-primary-300 font-bold">Embrace</span>,
+              <span class="text-primary-300 font-bold">Empower</span>,
+              <span class="text-primary-300 font-bold">Elevate</span>: Join our
+              mental health community app and discover a safe space to share,
+              heal, and grow together. Let's break the stigma and support each
+              other on this journey towards emotional well-being.
+            </p>
+            <button class="btn-one">Join Us Now</button>
+          </article>
+
+          <div class="p-4 lg:p-10 lg:w-2/5">
+            <div class="">
+              <img
+                src="src/images/home/community.png"
+                alt=""
+                class="w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doodles -->
+      <img
+        src="src/images/home/doodle-2.svg"
+        alt=""
+        class="absolute right-0 top-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 -scale-x-[1] opacity-20"
+      />
+      <img
+        src="src/images/home/doodle-2.svg"
+        alt=""
+        class="absolute bottom-0 left-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 opacity-20"
+      />
+    </section>
 
     <!-- ========== Why Choose Us ========== -->
-    <section class="container mx-auto pb-7 pt-10 lg:pt-20 overflow-x-hidden">
+    <section class="container mx-auto pb-7 pt-10 lg:pt-12 overflow-x-hidden">
       <div class="flex flex-col items-end">
         <hgroup class="mb-4 lg:w-3/5 lg:text-center">
           <h2 class="subheading heading-primary">Why Choose Us?</h2>
@@ -506,7 +550,9 @@
 
     <!-- ========== Our Testimonial ========== -->
     <section>
-      <h2 class="subheading heading-primary text-center mb-8">
+      <h2
+        class="subheading heading-primary text-center mb-8 block mx-auto !w-fit"
+      >
         Our Testimonials
       </h2>
       <div class="bg-gradient-to-b from-primary-300/20 to-white py-7 lg:py-14">
@@ -545,7 +591,9 @@
           <div
             class="absolute translate-x-1/2 right-1/2 lg:right-0 lg:translate-x-0 bottom-0"
           >
-            <button class="w-12 h-12 border-2 rounded-full mr-6">
+            <button
+              class="w-12 h-12 border-2 border-primary-300 rounded-full mr-6"
+            >
               <i class="fa-solid fa-caret-right text-primary-300 text-4xl"></i>
             </button>
             <button class="bg-primary-300 w-12 h-12 rounded-full">
@@ -641,7 +689,7 @@
 
     <!-- ========== Request Form ========== -->
     <section
-      class="container mx-auto mb-6 lg:mb-28 py-12 px-6 xs:px-8 xs:py-14 grid md:grid-cols-2 rounded-3xl lg:px-8 md:divide-x bg-[#FAFCE7] lg:py-16 2xl:py-20"
+      class="container mx-auto mb-6 lg:mb-28 py-12 px-6 xs:px-8 xs:py-14 grid md:grid-cols-2 rounded-3xl lg:px-8 bg-[#FAFCE7] lg:py-16 2xl:py-20"
     >
       <div class="md:px-6 md:flex md:flex-col md:justify-between md:h-full">
         <div>
@@ -692,7 +740,7 @@
             class="px-6 block py-4 w-full rounded-md shadow-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-white"
           />
         </label>
-        <button type="button" class="btn-one">Submit</button>
+        <button type="button" class="btn-one mx-auto">Submit</button>
       </form>
     </section>
 
