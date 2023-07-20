@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6, p, span, li, ul, button{
+h1, h2, h3, h4, h5, h6, p, span, li, ul, button, a{
   @apply !font-quicksand;
 }
 
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, ul, button{
 
 /* Headings */
 .subheading{
-  @apply text-4xl sm:text-5xl md:text-6xl xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-quicksand font-bold leading-normal pb-2;
+  @apply text-[2rem] sm:text-5xl md:text-6xl xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-quicksand font-bold leading-10 lg:leading-normal pb-2;
 }
 .heading-primary{
   @apply  text-transparent bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, ul, button{
   @apply  inline-block py-2 2xl:text-lg font-medium
 }
 .para{
-  @apply lg:text-lg font-quicksand !text-[#383838] font-medium
+  @apply text-sm leading-5  lg:text-lg font-quicksand !text-[#383838] font-semibold
 }
 
 /* Buttons */
@@ -91,5 +91,5 @@ h1, h2, h3, h4, h5, h6, p, span, li, ul, button{
 
 /* Custom styling */
 .issue-card{
-  @apply mx-auto block h-60 w-60 object-cover
+  @apply mx-auto block w-20 h-20 lg:h-52 lg:w-52 2xl:h-60 2xl:w-60 object-cover
 }
