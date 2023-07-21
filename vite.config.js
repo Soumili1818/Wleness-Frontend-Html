@@ -6,6 +6,7 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        experts: resolve(__dirname, 'experts.html'),
         patientSignup: resolve(__dirname, 'patient-signup.html'),
         patientLogin: resolve(__dirname, 'patient-login.html'),
         doctorSignup: resolve(__dirname, 'doctor-signup.html'),
